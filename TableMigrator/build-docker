@@ -1,0 +1,5 @@
+#bash
+rm -rf app
+dotnet publish -o app -c release
+docker build -t lykkex/azure-tablestorage-migrator .
+docker push lykkex/azure-tablestorage-migrator
